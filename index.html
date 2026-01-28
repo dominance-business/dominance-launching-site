@@ -457,13 +457,13 @@
 
         @media (max-width: 600px) {
             .container {
-                gap: 36px;
+                gap: 24px;
             }
 
             .logo {
                 max-width: 280px;
-                margin-top: -80px;
-                margin-bottom: -60px;
+                margin-top: -100px;
+                margin-bottom: -80px;
             }
 
             .tagline h1 {
@@ -494,7 +494,11 @@
             }
 
             .footer-buttons {
-                margin-top: 24px;
+                margin-top: 16px;
+            }
+
+            .content {
+                gap: 16px;
             }
         }
     </style>
@@ -561,6 +565,7 @@
 
         aboutBtn.addEventListener('click', () => {
             modalOverlay.classList.add('active');
+            aboutBtn.blur();
         });
 
         modalClose.addEventListener('click', () => {
