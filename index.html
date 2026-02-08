@@ -20,7 +20,7 @@
             background-color: #0a0a0a;
             font-family: 'Inter', sans-serif;
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             justify-content: center;
             padding: 20px;
             overflow-x: hidden;
@@ -49,7 +49,7 @@
             animation: logoReveal 2.5s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
             position: relative;
             margin-bottom: -160px;
-            margin-top: -200px;
+            margin-top: calc(50vh - 250px);
         }
 
         .logo::after {
@@ -604,7 +604,7 @@
 
             .logo {
                 max-width: 280px;
-                margin-top: -100px;
+                margin-top: calc(50vh - 150px);
                 margin-bottom: -80px;
             }
 
